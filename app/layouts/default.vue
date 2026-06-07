@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import NumberFlow from '@number-flow/vue'
-import { Menu, Star, X } from 'lucide-vue-next'
+import { Menu } from 'lucide-vue-next'
+import { GitHubIcon } from 'vue3-simple-icons'
+
 const showMenu = ref(false)
+const { title } = useAppConfig()
 const { rawStats } = useGithubStats()
 </script>
 

@@ -5,7 +5,6 @@ import { GitHubIcon } from 'vue3-simple-icons'
 
 const showMenu = ref(false)
 const { title } = useAppConfig()
-const { rawStats } = useGithubStats()
 </script>
 
 <template>

@@ -2,7 +2,7 @@
 import NumberFlow from '@number-flow/vue'
 import { Menu, Star, X } from 'lucide-vue-next'
 const showMenu = ref(false)
-const { rawStats } = useGithubStats() -->
+const { rawStats } = useGithubStats()
 </script>
 
 <template>

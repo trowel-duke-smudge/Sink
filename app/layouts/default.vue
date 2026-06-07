@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import NumberFlow from '@number-flow/vue'
-import { Menu, Star, X } from 'lucide-vue-next'
+import { Menu, X } from 'lucide-vue-next'
 import { GitHubIcon, TelegramIcon, XIcon } from 'vue3-simple-icons'
 
 const showMenu = ref(false)
 const { title, telegram, twitter, github } = useAppConfig()
-const { rawStats } = useGithubStats()
 </script>
 
 <template>
@@ -93,22 +91,6 @@ const { rawStats } = useGithubStats()
                   md:w-fit
                 "
               >
-                <Button
-                  as-child
-                  variant="outline"
-                  size="sm"
-                >
-                  <a
-                    :href="github"
-                    target="_blank"
-                    :title="$t('layouts.footer.social.github')"
-                    class="flex items-center gap-1.5"
-                  >
-                    <GitHubIcon class="size-4" />
-                    <Star class="size-3" />
-                    <NumberFlow class="tabular-nums" :value="rawStats.stars" />
-                  </a>
-                </Button>
 
                 <SwitchLanguage />
                 <SwitchTheme />

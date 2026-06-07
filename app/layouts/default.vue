@@ -172,7 +172,34 @@ const { title } = useAppConfig()
           </div>
 
           <div class="flex justify-center gap-6 text-sm">
-           
+            <a
+              v-if="twitter"
+              :href="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              :title="$t('layouts.footer.social.twitter')"
+              aria-label="Twitter"
+              class="
+                block text-muted-foreground
+                hover:text-primary
+              "
+            >
+              <XIcon class="size-6" />
+            </a>
+            <a
+              v-if="telegram"
+              :href="telegram"
+              target="_blank"
+              rel="noopener noreferrer"
+              :title="$t('layouts.footer.social.telegram')"
+              aria-label="Telegram"
+              class="
+                block text-muted-foreground
+                hover:text-primary
+              "
+            >
+              <TelegramIcon class="size-6" />
+            </a>
             <a
               v-if="github"
               :href="github"

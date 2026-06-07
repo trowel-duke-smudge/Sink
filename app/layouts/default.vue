@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import NumberFlow from '@number-flow/vue'
-import { Menu } from 'lucide-vue-next'
-import { GitHubIcon } from 'vue3-simple-icons'
+import { Menu, Star, X } from 'lucide-vue-next'
+import { GitHubIcon, TelegramIcon, XIcon } from 'vue3-simple-icons'
 
 const showMenu = ref(false)
-const { title } = useAppConfig()
+const { title, telegram, twitter, github } = useAppConfig()
+const { rawStats } = useGithubStats()
 </script>
 
 <template>
@@ -161,9 +162,9 @@ const { title } = useAppConfig()
             <small class="block text-center text-sm text-muted-foreground">
               &copy; {{ new Date().getFullYear() }}
               <a
-                href="https://llehct.im"
+                href="https://html.zone"
                 target="_blank"
-                title="llehct.im"
+                title="HTML.ZONE"
                 class="hover:text-primary"
               >
                 {{ $t('layouts.footer.copyright') }}

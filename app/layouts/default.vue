@@ -144,9 +144,9 @@ const { title, github } = useAppConfig()
             <small class="block text-center text-sm text-muted-foreground">
               &copy; {{ new Date().getFullYear() }}
               <a
-                href="https://html.zone"
+                href="https://llehct.im"
                 target="_blank"
-                title="HTML.ZONE"
+                title="LLEHCTIM"
                 class="hover:text-primary"
               >
                 {{ $t('layouts.footer.copyright') }}

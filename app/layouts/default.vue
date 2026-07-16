@@ -10,6 +10,7 @@ const { title, github } = useAppConfig()
   <div class="flex min-h-screen flex-col">
     <!-- Header -->
     <header>
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="4b8aea60-f956-46d1-8738-bf96f18d88c3"></script>
       <nav
         :data-state="showMenu && 'active'"
         class="fixed z-20 w-full border-b bg-background/50 backdrop-blur-3xl"
